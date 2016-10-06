@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Etsy Page</title>
+	<link rel = "stylesheet" href="style.css"/>
+	<link rel = "stylesheet" href="main.js"/>
+</head>
+<body>
+<div id="container">
+	<div id="header">
+		<div class="label"> 
+		<h1>Etsy</h1>
+		<input type="text" id = "search" name ="search"placeholder = "whiskey"/>
+		<button class="one">Search</button> 
+		<h5>Sell on Etsy</h5>
+		<h5>Register</h5>
+		<button>Sign in</button>
+
+	</div>
+	</div>
+	<ul id="nav">
+		 <li class="navbuttons">Clothing &amp; Accessories</li>
+		 <li class="navbuttons">Jewelry</li>
+		 <li class="navbuttons">Craft Supplies &amp; Tools</li>
+		 <li class="navbuttons">Wedding</li>
+		 <li class="navbuttons">Entertainment</li>
+		 <li class="navbuttons">Home &amp; Living</li>
+		 <li class="navbuttons">Kids &amp; Baby</li>
+		 <li class="navbuttons">Vintage</li>
+	</ul>
+	</div>
+	<div id="coloumn">
+		<p>Show results for:</p>
+		<ul class="categories">
+			<li class="navibuttons">Home &amp; Living</li>
+			<li class="navibuttons">Art &amp; Collectibles</li>
+			<li class="navibuttons">Wedding</li>
+			<li class="navibuttons">Clothing</li>
+			<li class="navibuttons">Paper &amp; Party Supplies</li>
+			<li class="navibuttons">Accessories</li>
+			<li class="navibuttons">Jewelry</li>
+			<li class="navibuttons">Craft Supplies &amp; Tools</li>
+			<li class="navibuttons">Bags &amp; Purses</li>
+			<li class="navibuttons">Bath &amp; Beauty</li>
+			<li class="navibuttons">Shoes</li>
+			<li class="navibuttons">Books, Movies &amp; Music</li>
+			<li class="navibuttons">Electronics &amp; Accesories</li>
+			<li class="navibuttons">Toys &amp; Games</li>
+			<li class="navibuttons">Pet Supplies</li>
+		</ul>
+		<p>Refine your search</p>
+		<div class="refine">
+		  <div>
+			<h4>Shop location</h4>
+			<label for="Anywhere">Anywhere</label>
+			<input type="radio" id="Anywhere" name="Anywhere"/><br>
+			<label for="usa">United States</label>
+			<input type="radio" id="usa"  name="United"/>
+			<p>Choose a custom location</p>
+           </div>
+           <div>
+           	<h4>Item type</h4>
+           	<label for="Allitems">All items</label>
+           	<input type="radio" id="Allitems" name="Allitems"/><br>
+           	<label for="handmade">Handmade</label>
+            <input type="radio" id="handmade" name="handmade"/><br>
+            <label for="vintage">Vintage</label>
+            <input type="radio" id="vintage" name="vintage"/>
+           </div>
+           <div>
+           	<h4>Price ($)</h4>
+            <input type="number" id="low" name="low" placeholder="low" />
+            <p>to</p>
+            <input type="number" id="high" name="high" placeholder="high" />
+            <button>1</button>
+           </div>
+           <div>
+           	<h4>Filter by color</h4>
+           	<input type="color" id="color" name="color"/>
+           </div>
+           <div>
+           	<h4>Ordering options</h4>
+           	<label for="accept">Accepts Etsy gift cards</label>
+           	<input type="checkbox" id="accept" name="accept"/>
+           	<label for="custom">Customizable</label>
+           	<input type="checkbox" id="custom" name="custom"/>
+           </div>
+           <div>
+           	<h4>Ship to</h4>
+	        <select name="Country" id="Country">
+		    <option value="Choose">Choose Country</option>
+		    <option value="Choose">USA</option>
+		    <option value="Choose">Trinidad and Tobago</option>
+		    <option value="Choose">Italy</option>
+	        </select>
+           </div>
+		</div>
+		<div id="coloumn">
+			
+		</div>
+		<div id="footer">
+			
+		</div>
+
+
+
+</div>
+<script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+  <script>
+    $("#myButton").on('click', function(e){
+      $.get("https://api.etsy.com/v2/listings/active?api_key=h9oq2yf3twf4ziejn10b717i&keywords=whiskey&includes=Images,Shop", function(data){
+        console.log(data)
+      })  
+      console.log('Hello World');
+    })
+  </script>
+	
+</body>
+</html>

@@ -1,0 +1,58 @@
+html{box-sizing: border-box;}
+*,*:after; *:before{box-sizing:inherit;}
+#container{
+	width: 1000px
+}
+#header{
+	display: inline-block;
+	width: 1000px;
+	height: 70px;
+}
+.label > h1{
+	margin-left: 20px;
+	margin-right: 50px;
+}
+.label > .one{
+	margin-right: 364px;
+}
+.label > h5{
+	margin-right: 30px;
+}
+
+
+
+.label > h1, .label > h5, .label > input, .label > button{
+	display: inline-block;
+	
+}
+
+
+#nav{
+	display: inline-flex;
+	width: 1000px;
+	justify-content: space-between;
+	color: #ccc;
+	list-style: none;
+
+}
+.navbuttons:hover{
+	color: black;
+}
+p{
+	margin-left: 20px;
+}
+#coloumn{
+	display: inline-block;
+
+}
+.categories{
+	border: 1px solid #ccc;
+	width: 175px;
+	margin: 0 0 0 20px;
+	list-style: none;
+}
+.refine{
+	border:1px solid #ccc;
+	width: 214px;
+	margin: 0 0 0 20px;
+}
