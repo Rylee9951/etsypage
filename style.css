@@ -14,16 +14,38 @@ html{box-sizing: border-box;}
 }
 .label > .one{
 	margin-right: 364px;
+	color: white;
+	background-color: #0292B5;
 }
 .label > h5{
 	margin-right: 30px;
+	color: #0292B5;
+}
+.label > .two{
+	background-color: white;	
+	color: #0292B5;
+	border-color: #0292B5;
+	margin-right: 28px;
+}
+.label > h5, .label > input, .label > button{
+	font-family: sans-serif;
+}
+
+
+.label > h1, .label > h5, .label > input, .label > button .label > p{
+	display: inline-block;
+	
 }
 
 
 
-.label > h1, .label > h5, .label > input, .label > button{
+#searchcart{
+	background-image: url(etsy-assignment-master/assets/cart.png);
+	height: 32px;
+	width: 34px;
+	background-size: 20px 20px;
+	background-repeat: no-repeat;
 	display: inline-block;
-	
 }
 
 
@@ -38,7 +60,7 @@ html{box-sizing: border-box;}
 .navbuttons:hover{
 	color: black;
 }
-p{
+.p{
 	margin-left: 20px;
 }
 #coloumn{
