@@ -16,6 +16,7 @@ html{box-sizing: border-box;}
 	margin-right: 364px;
 	color: white;
 	background-color: #0292B5;
+	border-style: none;
 }
 .label > h5{
 	margin-right: 30px;
@@ -30,9 +31,17 @@ html{box-sizing: border-box;}
 .label > h5, .label > input, .label > button{
 	font-family: sans-serif;
 }
+/*
+.logo{
+	background-image: url(etsy-assignment-master/Etsy Logo 2015/Web/large/etsy_logo_lg_black.png);
+	background-size: 50px;
+	height:100px;
+	width: 100px;
+	background-repeat: no repeat;
+}*/
 
 
-.label > h1, .label > h5, .label > input, .label > button .label > p{
+.label > .logo, .label > h5, .label > input, .label > button .label > p{
 	display: inline-block;
 	
 }
@@ -67,6 +76,10 @@ html{box-sizing: border-box;}
 	display: inline-block;
 
 }
+.categories > .navibuttons{
+	margin:2px 0 10px -17px;
+
+}
 .categories{
 	border: 1px solid #ccc;
 	width: 175px;
@@ -77,4 +90,12 @@ html{box-sizing: border-box;}
 	border:1px solid #ccc;
 	width: 214px;
 	margin: 0 0 0 20px;
+}
+.tri{
+	width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 7.5px 0 7.5px 15px;
+    border-color: transparent transparent transparent #000000;
+
 }
