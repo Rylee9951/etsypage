@@ -143,7 +143,25 @@ img{
 
 #gallery{
 	display: flex;
-	justify-content: space-around;
+	justify-content: space-between;
 	flex-wrap: wrap;
+	
+}
+.pics img {
+	height: 200px;
+	width: 339px;
+}
+.pics{
+	width: 340px;
+	height: 260px;
+	background-color: white;
+	margin: 5px 5px;
+}
+
+.truncate {
+  width: 250px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 

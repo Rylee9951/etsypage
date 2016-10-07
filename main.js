@@ -8,7 +8,6 @@ $(document).ready(function(){
 function putInDom(data) {
     var ourData = data.results.map(function(item){
         return {
-            description: item.description,
             price: item.price,
             link: item.url,
             title: item.title,
@@ -20,11 +19,12 @@ function putInDom(data) {
     ourData.forEach(function(item){
         htmlStr += `
         <div class="pics">
+            <a href=${item.link}>
             <div><img src="${item.img}" /></div>
-            <p> ${item.title} </p>
+            <p class="truncate"> ${item.title} </p>
             <p> ${item.price} </p>
-            <p> ${item.url} </P>
-            <p> ${item.description} </p>
+            
+            </a>
         </div>
         `
     })
