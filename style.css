@@ -1,53 +1,71 @@
 html{box-sizing: border-box;}
 *,*:after; *:before{box-sizing:inherit;}
 #container{
-	
-
+}
+.label > input{
+	width: 350px;
+	height: 25px;
+	margin-top: 20px;
 
 }
 #header{
 	display: inline-block;
-	
 	height: 70px;
+	border-bottom: 1px solid #787878;
 }
-.label > h1{
-	margin-left: 20px;
-	margin-right: 50px;
-}
+
+
+
 .label > .one{
-	margin-right: 364px;
+	margin-right: 350px;
 	color: white;
 	background-color: #0292B5;
 	border-style: none;
+	height: 30px;
+	width: 90px;
+	margin-left: -1px;
+	margin-top: 21px;
 }
-.label > h5{
-	margin-right: 30px;
+.label > p{
+	margin-right: 18px;
 	color: #0292B5;
+	margin-top: 33px;
+	font-size: 14px;
 }
 .label > .two{
 	background-color: white;	
 	color: #0292B5;
 	border-color: #0292B5;
 	margin-right: 28px;
+	margin-top: 26px;
+	border-radius: 3px;
+	height: 32px;
+	width: 70px;
 }
-.label > h5, .label > input, .label > button{
+.label > p, .label > input, .label > button, #searchcart > p{
 	font-family: sans-serif;
 }
+
 
 .logo{
 	background-image: url(etsy-assignment-master/assets/etsy_logo_lg_rgb.png);
 	background-size: 104px;
 	height:59px;
-	width: 116px;
+	width: 120px;
 	background-repeat:no-repeat;
 	background-position: 13px 7px;
-
+    
 }
 
 
-.label > .logo, .label > h5, .label > input, .label > button .label > p{
-	display: inline-block;
+.label > div, .label > p, .label > input, .label > button{
+	float: left;
 	
+}
+#searchcart > p{
+	margin-top: 5px;
+	font-size: 12px;
+
 }
 
 
@@ -56,22 +74,35 @@ html{box-sizing: border-box;}
 	background-image: url(etsy-assignment-master/assets/cart.png);
 	height: 32px;
 	width: 34px;
-	background-size: 20px 20px;
+	background-size: 21px 20px;
 	background-repeat: no-repeat;
 	display: inline-block;
+	margin-top: 21px;
+	color: #666666;
+	
 }
 
+#header > ul{
+    margin-top: 85px;
+	border-bottom: 1px solid #787878;
+}
 
-#nav{
+#nav > .navbuttons {
 	display: inline-flex;
-	
+	font-family: sans-serif;
 	justify-content: space-between;
-	color: #ccc;
+	color: #787878;
 	list-style: none;
+	margin-bottom: 11px;
+	
 
 }
 .navbuttons:hover{
 	color: black;
+}
+.navbuttons{
+	margin-right: 20px;
+	
 }
 .p{
 	margin-left: 20px;
@@ -80,6 +111,7 @@ html{box-sizing: border-box;}
 	display:flex;
 	justify-content: flex-start;
 	background-color: #F5F5F1;
+	margin-top: 12px;
 }
 #coloumn_left{
 	float: left
@@ -115,30 +147,70 @@ html{box-sizing: border-box;}
 img{
 	border-radius: 3px;
 }
-
+#coloumn_left{
+	font-family: sans-serif;
+}
+.categories{
+	background-color: white;
+}
+.categories > h4{
+	margin-left: -29px;
+	font-size: 13px;
+	margin-bottom: 20px;
+}
 .categories > .navibuttons{
-	margin:2px 0 10px -17px;
+	margin:-14px 0 30px -10px;
+	font-size: 13px;
+	color: #0292B5;
+}
+.navibuttons:hover{
+border-bottom: 1px solid #0292B5;
 
 }
+
+
+
  #coloumn_left > .categories{
-	border: 1px solid #ccc;
-	width: 175px;
+	border: 1px solid #787878;
+	width: 185px;
 	margin: 0 0 0 20px;
 	list-style: none;
 }
 .refine{
-	border:1px solid #ccc;
-	width: 214px;
+	border:1px solid #787878;
+	width: 225px;
+	height: 580px;
 	margin: 0 0 0 20px;
+	background-color: white;
+	color:  #0292B5;
 }
-.tri{
-	width: 0;
-    height: 0;
-    border-style: solid;
-    border-width: 12.5px 0 2.5px 11px;
-    border-color: transparent transparent transparent #000000;
-    justify-content: space-around;
+.refine > div{
+	border-bottom:1px solid #787878;
+	margin-left: 10px;
+	font-size: 13px;
+	margin-bottom: 15px;	
+}
 
+.tri{
+	width: 35px;
+	height:27px;
+	margin-bottom: 5px;
+	margin-top: 5px;
+}
+#price{
+	width:44px;
+	height: 26px;
+}
+#price + .p2 {
+	display: inline-block;
+}
+h4{
+	color: black;
+}
+#color{
+	height: 16px;
+	width: 16px;
+	display: inline-block;
 }
 
 #gallery{
