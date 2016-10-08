@@ -23,8 +23,8 @@ function putInDom(data) {
             <a href=${item.link}>
             <div><img src="${item.img}" /></div>
             <p class="truncate"> ${item.title} </p>
-            <p> ${item.price} </p>
-            <p> ${item.shop_name}</p>
+            <p class="pri"> ${item.price} </p>
+            <p> ${item.shop_name} </p>
             
             </a>
         </div>
