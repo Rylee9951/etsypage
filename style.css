@@ -185,10 +185,41 @@ border-bottom: 1px solid #0292B5;
 	color:  #0292B5;
 }
 .refine > div{
-	border-bottom:1px solid #787878;
+	
 	margin-left: 10px;
 	font-size: 13px;
-	margin-bottom: 15px;	
+	margin-bottom: 15px;
+
+}
+.filter input{
+	border: 1px solid #787878;
+}
+.filter input:nth-child(2){
+   background-color:#F40B32;
+}
+.filter input:nth-child(3){
+    background-color:#FF7F00;
+}
+.filter input:nth-child(4){
+    background-color:#F3CC0C;
+}
+.filter input:nth-child(5){
+    background-color:#0AC20A;
+}
+.filter input:nth-child(6){
+    background-color:#0CCCF3;
+}
+.filter input:nth-child(7){
+    background-color:#A60CF3;
+}
+.filter input:nth-child(8){
+    background-color:#000000;
+}
+select{
+	width: 205px;
+	height: 40px;
+	border:1px solid #787878;
+	
 }
 
 .tri{
@@ -213,6 +244,7 @@ h4{
 	display: inline-block;
 }
 
+
 #gallery{
 	display: flex;
 	justify-content: space-between;
@@ -221,17 +253,22 @@ h4{
 }
 .pics img {
 	height: 200px;
-	width: 339px;
+	width: 234px;
+	margin-bottom: 0;
 }
 .pics{
-	width: 340px;
+	width: 234px;
 	height: 260px;
 	background-color: white;
-	margin: 5px 5px;
+	margin-top: 10px;
+	margin-left: 12px; 
+	margin-right: 5px;
+	border:1px solid #787878;
+	border-radius: 4px;
 }
 
 .truncate {
-  width: 250px;
+  width: 225px;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
