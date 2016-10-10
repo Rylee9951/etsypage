@@ -8,7 +8,7 @@ $(document).ready(function(){
 function putInDom(data) {
     var ourData = data.results.map(function(item){
         return {
-            shop: item.card_shop_name,
+            shop_name: item.Shop.shop_name,
             price: item.price,
             link: item.url,
             title: item.title,
@@ -21,10 +21,10 @@ function putInDom(data) {
         htmlStr += `
         <div class="pics">
             <a href=${item.link}>
-            <div><img src="${item.img}" /></div>
+            <div><img src="${item.img}" title="${item.title}" /></div>
             <p class="truncate"> ${item.title} </p>
             <p class="pri"> ${item.price} </p>
-            
+            <p class="shop"> ${item.shop_name}</p>
             
             </a>
         </div>
